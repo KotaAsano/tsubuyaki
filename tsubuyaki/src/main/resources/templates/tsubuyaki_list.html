@@ -20,6 +20,13 @@
         <input type="submit" value="つぶやく" />
     </form>
 
+    <h2>検索する</h2>
+    <form th:action="@{/search}" method="get">
+        <label>キーワード：</label>
+        <input type="text" name="keyword"/>
+        <input type="submit" />
+    </form>
+
     <h2>タイトルへ</h2>  
     <a th:href="@{/}">戻る</a>
 </body>
